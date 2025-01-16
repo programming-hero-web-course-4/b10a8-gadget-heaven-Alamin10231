@@ -1,0 +1,168 @@
+[
+    {
+      "product_id": "P101",
+      "product_title": "iPhone 14 Pro Max",
+      "product_image": "../assets/iPhone-14-Pro-Deep-Purple-7300.jpg",
+      "category": "phone",
+      "price": 1199,
+      "description": "The latest iPhone with advanced camera technology and dynamic island display.",
+      "specification": ["6.7-inch Super Retina XDR Display", "128GB Storage", "A16 Bionic Chip"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "P102",
+      "product_title": "Samsung Galaxy S23 Ultra",
+      "product_image": "../assets/Samsung-Galaxy-S23-Ultra-Cream-Smartphone.jpg",
+      "category": "phone",
+      "price": 1099,
+      "description": "A premium Samsung phone with 200MP camera and S Pen integration.",
+      "specification": ["6.8-inch AMOLED 2X Display", "256GB Storage", "Snapdragon 8 Gen 2"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P103",
+      "product_title": "Google Pixel 8 Pro",
+      "product_image": "../assets/Google-Pixel-8-Pro-Obsidian-2.jpg",
+      "category": "phone",
+      "price": 899,
+      "description": "Google's flagship phone with advanced AI features and top-tier camera quality.",
+      "specification": ["6.7-inch OLED Display", "128GB Storage", "Google Tensor G3"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "L101",
+      "product_title": "MacBook Pro 16-inch",
+      "product_image": "../assets/Dell-XPS-13-Plus-1.jpg",
+      "category": "laptop",
+      "price": 2499,
+      "description": "Apple's high-performance laptop with M2 Max chip and Liquid Retina display.",
+      "specification": ["16-inch Liquid Retina XDR Display", "1TB SSD", "M2 Max Chip"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "L102",
+      "product_title": "HP Spectre x360",
+      "product_image": "../assets/HP-Spectre-x360-13-in-bd-2.jpg",
+      "category": "laptop",
+      "price": 1599,
+      "description": "A versatile 2-in-1 laptop with premium build quality and touchscreen.",
+      "specification": ["13.5-inch OLED Display", "16GB RAM", "1TB SSD"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": "L103",
+      "product_title": "Dell XPS 13 Plus",
+      "product_image": "../assets/Dell-XPS-13-Plus-1.jpg",
+      "category": "laptop",
+      "price": 1399,
+      "description": "Ultra-thin and lightweight laptop with impressive display and performance.",
+      "specification": ["13.4-inch InfinityEdge Display", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "T101",
+      "product_title": "iPad Pro 12.9-inch",
+      "product_image": "../assets/iPad-Pro-M2-2022---12.9inch-Silver-4456.jpg",
+      "category": "tablet",
+      "price": 1099,
+      "description": "Apple's largest and most powerful tablet with M2 chip and ProMotion display.",
+      "specification": ["12.9-inch Liquid Retina XDR", "128GB Storage", "M2 Chip"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "T102",
+      "product_title": "Samsung Galaxy Tab S9",
+      "product_image": "../assets/Galaxy-Tab-S9-Graphite-3477.jpg",
+      "category": "tablet",
+      "price": 849,
+      "description": "A sleek Android tablet with AMOLED display and S Pen support.",
+      "specification": ["11-inch AMOLED Display", "256GB Storage", "Snapdragon 8 Gen 2"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "T103",
+      "product_title": "Microsoft Surface Pro 9",
+      "product_image": "../assets/microsoft_qez_00052_surface_pro_8_ng_1729171.jpg",
+      "category": "tablet",
+      "price": 1299,
+      "description": "A versatile 2-in-1 tablet with Windows 11 and detachable keyboard.",
+      "specification": ["13-inch PixelSense Display", "512GB SSD", "Intel Core i7"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": "H101",
+      "product_title": "Sony WH-1000XM5",
+      "product_image": "../assets/61hgACWSwHL._AC_UF1000,1000_QL80_.jpg",
+      "category": "headphone",
+      "price": 349,
+      "description": "Top-rated noise-cancelling headphones with immersive sound.",
+      "specification": ["Noise Cancellation", "30-Hour Battery Life", "LDAC Support"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "H102",
+      "product_title": "Bose QuietComfort 45",
+      "product_image": "../assets/51Ltm3tbH2L._AC_SL1200_.jpg",
+      "category": "headphone",
+      "price": 329,
+      "description": "Comfortable headphones with excellent noise cancelling and clear audio.",
+      "specification": ["Active Noise Cancellation", "24-Hour Battery", "Bluetooth 5.1"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "H103",
+      "product_title": "Sennheiser Momentum 4",
+      "product_image": "../assets/71TpH0WnUwL._AC_SL1500_.jpg",
+      "category": "headphone",
+      "price": 399,
+      "description": "Premium headphones with exceptional sound quality and design.",
+      "specification": ["42-Hour Battery", "Bluetooth 5.2", "Comfort Fit"],
+      "availability": false,
+      "rating": 4.8
+    },
+    {
+      "product_id": "E101",
+      "product_title": "Apple AirPods Pro 2",
+      "product_image": "../assets/df30d65a585267517be8967b41778a98.jpg",
+      "category": "earbuds",
+      "price": 249,
+      "description": "High-quality wireless earbuds with ANC and spatial audio.",
+      "specification": ["Active Noise Cancellation", "H2 Chip", "MagSafe Charging"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "E102",
+      "product_title": "Samsung Galaxy Buds2 Pro",
+      "product_image": "../assets/Galaxy-Buds2-Pro-Auracast-Update.jpg",
+      "category": "earbuds",
+      "price": 229,
+      "description": "Compact earbuds with immersive sound and ANC.",
+      "specification": ["24-Bit Hi-Fi Audio", "Bluetooth 5.3", "Water-Resistant"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "E103",
+      "product_title": "Sony WF-1000XM4",
+      "product_image": "../assets/gsmarena_001.jpg",
+      "category": "earbuds",
+      "price": 279,
+      "description": "Premium earbuds with industry-leading noise cancellation.",
+      "specification": ["Noise Cancellation", "24-Hour Battery", "Wireless Charging"],
+      "availability": false,
+      "rating": 4.8
+    }
+  ]
+  
