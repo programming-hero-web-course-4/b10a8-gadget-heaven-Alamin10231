@@ -1,0 +1,28 @@
+[
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/7/72/Avatar_portrait_illustration.jpeg",
+      "name": "John Doe",
+      "profession": "Frontend Developer"
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/9/99/Avatar_female.svg",
+      "name": "Jane Smith",
+      "profession": "UI/UX Designer"
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Avatar_male.svg",
+      "name": "Michael Brown",
+      "profession": "Backend Developer"
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Avatar_girl.svg",
+      "name": "Emily Davis",
+      "profession": "Full Stack Developer"
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Avatar_boy.svg",
+      "name": "William Johnson",
+      "profession": "Web Designer"
+    }
+  ]
+  

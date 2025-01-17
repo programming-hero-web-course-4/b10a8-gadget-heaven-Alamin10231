@@ -8,6 +8,9 @@ import {
 import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
+import Statistics from './components/Statistics/Statistics';
+import About from './components/About/About';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,18 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>
+      },
+      {
+        path:"Statistics",
+        element:<Statistics></Statistics>
+      },
+      {
+        path:"About",
+        element:<About></About>
+      },
+      {
+        path:"Dashboard",
+        element:<Dashboard></Dashboard>
       }
     ]
   },

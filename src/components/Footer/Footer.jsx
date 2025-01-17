@@ -2,7 +2,13 @@ import React from 'react';
 
 const Footer = () => {
     return (
+      <>
+        <div className='text-center py-10 '>
+          <h1 className='text-4xl font-bold text-gray-700 pb-4'>Gadget Heaven</h1>
+          <p className='border-b-2 border-gray-400 pb-5 text-lg text-gray-600'>Leading the way in cutting-edge technology and innovation.</p>
+          </div>
         <footer className="footer bg-neutral text-neutral-content p-10">
+        
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
@@ -24,7 +30,9 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </nav>
 </footer>
-    );
+</>);
+    
 };
+
 
 export default Footer;

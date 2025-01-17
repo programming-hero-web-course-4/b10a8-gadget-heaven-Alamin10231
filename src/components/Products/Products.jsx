@@ -13,9 +13,9 @@ const Products = () => {
     return (
         <div className="px-6 md:px-12 lg:px-20 py-10">
             <h1 className="text-4xl font-bold text-center mb-10">Explore Cutting-Edge Gadgets</h1>
-            <div className="flex flex-wrap lg:flex-nowrap gap-10">
+            <div className="flex flex-wrap lg:flex-nowrap gap-10 ">
                
-                <div className="w-full lg:w-1/5 shadow-md p-4 font-bold items-center text-center">
+                <div className="w-full lg:w-1/5 shadow-md p-4 font-bold items-center text-center max-h-[600px]">
                   <button className='border-none px-20 py-3 rounded-3xl bg-slate-200 text-md hover:bg-stone-300 my-4'>All Product</button>
                   <button className='border-none px-20 py-3 rounded-3xl bg-slate-200 text-md hover:bg-stone-300 my-4'>Phones</button>
                   <button className='border-none px-20 py-3 rounded-3xl bg-slate-200 text-md hover:bg-stone-300 my-4'>Laptops</button>
