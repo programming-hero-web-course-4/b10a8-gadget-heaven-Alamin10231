@@ -12,11 +12,12 @@ import {
     Tooltip,
     Legend,
   } from 'recharts';
+import useTitle from '../Title/Title';
 
 const Statistics = () => {
 
 
-
+useTitle("Statistics")
 
     const [barchat,setbarchat]= useState([])
     useState(()=>{

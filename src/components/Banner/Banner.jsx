@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
+
   return (
     <div>
       <div className="hero absolute top-32 text-white px-4 sm:px-6 lg:px-8">
@@ -16,13 +18,29 @@ const Banner = () => {
         level. From smart devices to the coolest accessories, we have it all!
       </p>
      
-      <button className="btn bg-white rounded-3xl ">Shop Now</button>
+      <Link to="/Dashboard">
+  <button
+    className="btn bg-white rounded-3xl "
+    onClick={() => {
+      const navbarr = document.querySelector(".navbar");
+      if (navbarr) {
+        navbarr.style.paddingBottom = "15px"; 
+        navbarr.style.background = "white"; 
+        
+      }
+    }}
+  >
+    Shop Now
+  </button>
+</Link>
+
+
     </div>
   </div>
 </div>
 
 
-      <div class="w-3/5 2xl:w-1/2 mx-auto -mt-28 rounded-3xl border-2 border-[#FFFFFF]">
+      <div class="w-3/5 2xl:w-1/2 mx-auto -mt-24 rounded-3xl border-2 border-[#FFFFFF]">
         <div>
           <img
             class="rounded-3xl w-full h-[400px] object-fill p-3 "

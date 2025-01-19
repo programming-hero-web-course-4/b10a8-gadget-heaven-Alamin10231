@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../Title/Title";
 
 const About = () => {
+  useTitle("About us")
   return (
     <>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-20 max-w-[1200px] mx-auto">

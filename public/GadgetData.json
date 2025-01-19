@@ -74,7 +74,7 @@
       "description": "Apple's largest and most powerful tablet with M2 chip and ProMotion display.",
       "specification": ["12.9-inch Liquid Retina XDR", "128GB Storage", "M2 Chip"],
       "availability": true,
-      "rating": 4.9
+      "rating":3.9
     },
     {
       "product_id": "T102",
@@ -96,7 +96,7 @@
       "description": "A versatile 2-in-1 tablet with Windows 11 and detachable keyboard.",
       "specification": ["13-inch PixelSense Display", "512GB SSD", "Intel Core i7"],
       "availability": false,
-      "rating": 4.7
+      "rating": 3.7
     },
     {
       "product_id": "H101",
@@ -118,7 +118,7 @@
       "description": "Comfortable headphones with excellent noise cancelling and clear audio.",
       "specification": ["Active Noise Cancellation", "24-Hour Battery", "Bluetooth 5.1"],
       "availability": true,
-      "rating": 4.8
+      "rating": 2.8
     },
     {
       "product_id": "H103",
@@ -140,7 +140,7 @@
       "description": "High-quality wireless earbuds with ANC and spatial audio.",
       "specification": ["Active Noise Cancellation", "H2 Chip", "MagSafe Charging"],
       "availability": true,
-      "rating": 4.9
+      "rating": 3.9
     },
     {
       "product_id": "E102",
@@ -162,7 +162,7 @@
       "description": "Premium earbuds with industry-leading noise cancellation.",
       "specification": ["Noise Cancellation", "24-Hour Battery", "Wireless Charging"],
       "availability": false,
-      "rating": 4.8
+      "rating": 5.0
     }
   ]
   

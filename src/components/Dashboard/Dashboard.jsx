@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useTitle from "../Title/Title";
 
 const Dashboard = () => {
+
+  useTitle("Dashboard")
+
+
   const [colorbtn, setcolorbtn] = useState(false);
 
   const handleCart = () => {
