@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { GiSelfLove } from "react-icons/gi";
 import { FaCartShopping } from "react-icons/fa6";
 import ReactStars from "react-rating-stars-component";
 import { toast } from "react-toastify";
+import { addToCart, addToWishList } from "../About/AddToDb";
 
 
 const ProductDetails = () => {
 
+const [isAddedToWishList,setisAddedToWishList]= useState(false)
+
 const handletoast=()=>{
-  toast.success("congraculation motherchod you add there")
+ addToCart(id);
+ 
+}
+const addToWishlist=()=>{
+addToWishList(id)
+setisAddedToWishList(true)
 }
 
 
-  const { product_id } = useParams();
+  const { product_id ,product_id:id } = useParams();
 
   const data = useLoaderData();
   const productitem = data.find((p) => p.product_id === product_id);
@@ -59,7 +67,8 @@ const handletoast=()=>{
 />
             ,<p className="py-4">{rating}</p>
             <button className="btn  bg-[#9538E2] text-white rounded-3xl hover:bg-black hover:text-white px-6 text-[16px] items-center "
-            onClick={handletoast}
+            onClick={()=>handletoast(id)}
+            
             >
 
               Add to card{" "}
@@ -67,7 +76,9 @@ const handletoast=()=>{
                 <FaCartShopping />
               </span>
             </button>
-            <button className="btn rounded-3xl ml-4">
+            <button className="btn rounded-3xl ml-4"
+            onClick={()=>addToWishlist(id)}
+            >
               <GiSelfLove />
             </button>
           </div>
