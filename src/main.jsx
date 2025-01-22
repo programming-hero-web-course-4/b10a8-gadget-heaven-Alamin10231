@@ -1,65 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import router from '/routes/Route';  // Import the router
+
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./components/Root/Root";
-import ErrorPage from "./components/ErrorPage/ErrorPage";
-import Home from "./components/Home/Home";
-import Statistics from "./components/Statistics/Statistics";
-import About from "./components/About/About";
-import Dashboard from "./components/Dashboard/Dashboard";
-import ProductDetails from "./components/ProductDetails/ProductDetails";
 import { ToastContainer } from "react-toastify";
-import Cart from "./components/Cart/Cart";
-import Wishlist from "./components/Wishlist/Wishlist";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
-    children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-      },
-      {
-        path: "Statistics",
-        element: <Statistics></Statistics>,
-      },
-      {
-        path: "About",
-        element: <About></About>,
-      },
-      {
-        path: "Dashboard",
-        element: <Dashboard></Dashboard>,
-        children: [
-          {
-            path: "cart", // Changed from "/Dashboard/:Cart" to "cart"
-            loader: () => fetch("GadgetData.json"),
-            element: <Cart></Cart>,
-          },
-          {
-            path: "wishlist", // Changed from "/Dashboard/:Wishlist" to "wishlist"
-            loader: () => fetch("GadgetData.json"),
-            element: <Wishlist></Wishlist>,
-          },
-        ],
-      },
-      
-      {
-        path: "Product/:product_id",
-        loader: () => fetch("/GadgetData.json"),
-        element: <ProductDetails></ProductDetails>,
-      },
-    ],
-  },
-]);
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
     <RouterProvider router={router} />
     <ToastContainer />
-  </StrictMode>
+  </React.StrictMode>
 );

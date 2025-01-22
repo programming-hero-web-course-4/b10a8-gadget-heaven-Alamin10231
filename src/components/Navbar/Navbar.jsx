@@ -1,139 +1,168 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { FaCartShopping } from "react-icons/fa6";
-import { GiSelfLove } from "react-icons/gi";
-
+import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
 const Navbar = () => {
-  
-  const [isTransparent, setIsTransparent] = useState(false);
-
-  const handleHomeClick = () => {
-    setIsTransparent(false);
-    const navbar = document.querySelector(".navbar");
-    if (navbar) {
-      navbar.style.paddingBottom = "400px";
-      navbar.style.background = "#9538E2";
-    }
-   
-   
-  };
-
-  const handleStatisticsClick = () => {
-    setIsTransparent(true);
-    
-  };
-
-  const handleDashboardClick = () => {
-    setIsTransparent(true);
-   
-  };
-
+  const location = useLocation();
+  const gotohome =
+    location.pathname === "/" || location.pathname.startsWith("/home");
   return (
-    <>
-    <div className="border-2 border-gray-100  rounded-2xl max-w-[1540px] mx-auto font-semibold">
-      <div
-        className="navbar text-black max-w-[1500px] m-4 rounded-2xl pb-[400px]"
-        style={{
-          background: isTransparent ? "Transparent" : "#9538E2",
-          paddingBottom: isTransparent ? "15px" : "400px",
-          transition: "0.3s",
-        }}
-      >
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-            
+    <div className="navbar bg-base-100 max-w-[80%] mx-auto">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              className={`menu menu-sm dropdown-content bg-[#9538E2] mt-3 w-52 p-2`}
-            >
-              <li>
-                <NavLink to="/" >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/Statistics" onClick={handleStatisticsClick}>
-                  Statistics
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/Dashboard" onClick={handleDashboardClick}>
-                  Dashboard
-                </NavLink>
-              </li>
-              
-              <li>
-                <NavLink to="/About" >
-                  About Us
-                </NavLink>
-              </li>
-            </ul>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
-          <a className="btn btn-ghost text-xl text-white">Gadget Heaven</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal  flex gap-4 text-lg">
-            <li>
-              <NavLink to="/" onClick={handleHomeClick}>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2]"
+                    : gotohome
+                    ? "text-black"
+                    : "text-black"
+                }
+              >
                 Home
               </NavLink>
-            </li>
-            <li>
-              <NavLink to="/Statistics" onClick={handleStatisticsClick}>
-                Statistics
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/Dashboard" onClick={handleDashboardClick}>
+            
+            
+              <NavLink
+                to={"/Dashboard"}
+                className={({ isActive }) =>
+                    isActive
+                ? "text-[#9538E2]"
+                : gotohome
+                ? "text-black"
+                : "text-black"
+            }
+              >
                 Dashboard
               </NavLink>
-
             
-            </li>
-            <li>
-              <NavLink to="/About">About Us</NavLink>
-            </li>
+            
+          
+              <NavLink
+                to={"/Statistics"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2]"
+                    : gotohome
+                    ? "text-black"
+                    : "text-black"
+                }
+              >
+                Statistics
+              </NavLink>
+            
+             
+              <NavLink
+                to={"/AboutUs"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2]"
+                    : gotohome
+                    ? "text-black"
+                    : "text-black"
+                }
+              >
+                About Us
+              </NavLink>
+            
           </ul>
         </div>
-        <div className="navbar-end gap-4">
-          <button className="btn rounded-3xl">
-            <FaCartShopping />
-          </button>
-          <button className="btn rounded-3xl">
-            <GiSelfLove />
-          </button>
+        <a className="btn btn-ghost text-xl text-white">Gadget Heaven</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1 space-x-6 text-[16px]">
+               
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white underline underline-offset-1"
+                    : gotohome
+                    ? "text-black"
+                    : "text-black"
+                }
+              >
+                Home
+              </NavLink>
+            
+            
+              <NavLink
+                to={"/Dashboard"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2] underline underline-offset-1"
+                    : gotohome
+                    ? "text-white"
+                    : "text-black"
+                }
+              >
+                Dashboard
+              </NavLink>
+            
+            
+          
+              <NavLink
+                to={"/Statistics"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2] underline underline-offset-1"
+                    : gotohome
+                    ? "text-white"
+                    : "text-black"
+                }
+              >
+                Statistics
+              </NavLink>
+           
+              <NavLink
+                to={"/AboutUs"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#9538E2] underline underline-offset-1"
+                    : gotohome
+                    ? "text-white"
+                    : "text-black"
+                }
+              >
+                About Us
+              </NavLink>
+           
+
+
+          </ul>
+      </div>
+      <div className="navbar-end gap-4">
+        <div className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1]">
+          <IoCartOutline className="text-lg" />
+        </div>
+        <div className="flex justify-center items-center cursor-pointer w-8 h-8 bg-white rounded-full border border-[#dfdfe1]">
+          <CiHeart className="text-lg" />
         </div>
       </div>
     </div>
-   
-  </>
-  
   );
-
-
-  
 };
-
-
-
 
 export default Navbar;

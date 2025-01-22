@@ -1,0 +1,28 @@
+[
+    {
+      "picture": "../../assets/beard-busy-bearded-business-background.jpg",
+      "name": "John Doe",
+      "profession": "Frontend Developer"
+    },
+    {
+      "picture": "../../assets/man-work.jpg",
+      "name": "Jane Smith",
+      "profession": "UI/UX Designer"
+    },
+    {
+      "picture":"../../assets/person-working-animation-porject.jpg",
+      "name": "Michael Brown",
+      "profession": "Backend Developer"
+    },
+    {
+      "picture": "../../assets/male-graphic-designer-smiling-while-working.jpg",
+      "name": "Emily Davis",
+      "profession": "Full Stack Developer"
+    },
+    {
+      "picture": "../../assets/caucasian-young-man-sitting-front-laptop-looking-camera.jpg",
+      "name": "William Johnson",
+      "profession": "Web Designer"
+    }
+  ]
+  

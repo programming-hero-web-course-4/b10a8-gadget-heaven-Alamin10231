@@ -1,56 +1,33 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
-
-  return (
-    <div>
-      <div className="hero absolute top-32 text-white px-4 sm:px-6 lg:px-8">
-  <div className="hero-content text-center max-w-4xl mx-auto ">
-    <div>
-      
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-        Upgrade Your Tech Accessorize with Gadget Heaven Accessories
-      </h1>
-      
-      <p className="py-4 sm:py-6 text-sm sm:text-base lg:text-lg">
-        Explore the latest gadgets that will take your experience to the next
-        level. From smart devices to the coolest accessories, we have it all!
-      </p>
-     
-      <Link to="/Dashboard">
-  <button
-    className="btn bg-white rounded-3xl "
-    onClick={() => {
-      const navbarr = document.querySelector(".navbar");
-      if (navbarr) {
-        navbarr.style.paddingBottom = "15px"; 
-        navbarr.style.background = "white"; 
-        
-      }
-    }}
-  >
-    Shop Now
-  </button>
-</Link>
-
-
+    return (
+        <div className='pt-1'>
+            <div className='w-[98%] max-w-[82%] mx-auto -mt-20 border-2 border-[#f1edf5] p-2 rounded-[32px]'>
+            <div className="hero bg-[#9538E2] rounded-[32px] pt-28 pb-36">
+  <div className="hero-content text-center">
+    <div className="w-4/5">
+      <h1 className="text-4xl font-bold text-white">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+      <p className="py-6 text-white">
+                                Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+                            </p>
+      <NavLink to={"/Dashboard"}><button className="btn bg-white text-[#9538E2] rounded-3xl">Shop Now</button></NavLink>
     </div>
   </div>
 </div>
-
-
-      <div class="w-3/5 2xl:w-1/2 mx-auto -mt-24 rounded-3xl border-2 border-[#FFFFFF]">
-        <div>
-          <img
-            class="rounded-3xl w-full h-[400px] object-fill p-3 "
-            src="/assets/banner.jpg"
-            alt=""
-          ></img>
         </div>
-      </div>
-    </div>
-  );
+        <div className='w-[60%] mx-auto -mt-36 rounded-2xl border-2 border-[#FFFFFF]'>
+           <div>
+            
+                 {
+                    <img className='w-full h-[400px] object-fill p-2 rounded-2xl' src="../../assets/banner.jpg" alt="" />
+                }
+            
+           </div>
+        </div>
+        </div>
+    );
 };
 
 export default Banner;

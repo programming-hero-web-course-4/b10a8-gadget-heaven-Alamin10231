@@ -2,37 +2,39 @@ import React from 'react';
 
 const Footer = () => {
     return (
-      <>
-        <div className='text-center py-10 '>
-          <h1 className='text-4xl font-bold text-gray-700 pb-4'>Gadget Heaven</h1>
-          <p className='border-b-2 border-gray-400 pb-5 text-lg text-gray-600'>Leading the way in cutting-edge technology and innovation.</p>
-          </div>
-        <footer className="footer bg-neutral text-neutral-content p-10">
-        
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
-</>);
-    
-};
+        <footer className='pb-10'>
+            <div className='w-11/12 mx-auto mt-20'>
+                <div>
+                    <h2 className='text-3xl font-bold text-center'>Gadget Heaven</h2>
+                    <p className='text-[#09080F99] text-center mt-3'>Leading the way in cutting-edge technology and innovation.</p>
+                </div>
 
+                <div className='divider'></div>
+
+                <div className='flex justify-between md:w-1/2 mx-auto'>
+                    <nav className='flex flex-col text-[#09080F99]'>
+                        <h6 className="text-[#09080F] text-lg font-bold">Services</h6>
+                        <a className="link link-hover text-sm pt-2">Product Support</a>
+                        <a className="link link-hover text-sm pt-2">Order Tracking</a>
+                        <a className="link link-hover text-sm pt-2">Shipping & Delivery</a>
+                        <a className="link link-hover text-sm pt-2">Returns</a>
+                    </nav>
+                    <nav className='flex flex-col text-[#09080F99]'>
+                        <h6 className="text-[#09080F] text-lg font-bold">Company</h6>
+                        <a className="link link-hover text-sm pt-2">About us</a>
+                        <a className="link link-hover text-sm pt-2">Careers</a>
+                        <a className="link link-hover text-sm pt-2">Contact</a>
+                    </nav>
+                    <nav className='flex flex-col text-[#09080F99]'>
+                        <h6 className="text-[#09080F] text-lg font-bold">Legal</h6>
+                        <a className="link link-hover text-sm pt-2">Terms of Service</a>
+                        <a className="link link-hover text-sm pt-2">Privacy policy</a>
+                        <a className="link link-hover text-sm pt-2">Cookie Policy</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    );
+};
 
 export default Footer;

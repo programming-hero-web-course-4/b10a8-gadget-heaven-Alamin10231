@@ -12,18 +12,16 @@ import {
     Tooltip,
     Legend,
   } from 'recharts';
-import useTitle from '../Title/Title';
+import UseTitle from '../UseTitle';
 
 const Statistics = () => {
-
-
-useTitle("Statistics")
-
-    const [barchat,setbarchat]= useState([])
+  UseTitle("Statistics |")
+  const [barchat,setbarchat]= useState([])
     useState(()=>{
         fetch("/GadgetData.json")
         .then(res=>res.json())
         .then(data=>setbarchat(data))
+        
     },[])
     return (
        <Link to={"/Statistics"}>
