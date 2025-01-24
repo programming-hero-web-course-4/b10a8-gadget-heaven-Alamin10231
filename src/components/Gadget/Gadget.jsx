@@ -5,8 +5,9 @@ const Gadget = ({gadget}) => {
     const { product_id,product_title,price,product_image}= gadget;
     return (
         <div className='border-2 shadow-md p-4 rounded-2xl mx-10 min-w-[350px] min-h-[400px]'>
-            <img className='w-[400px] h-[300px] object-fill' src={product_image} alt="" />
-            
+            <img className='w-[400px] h-[300px] object-fill' 
+            src={`/images/${product_image.split('/').pop()}`} alt={`${product_image} image`}
+                    />
             <h1 className='py-4 text-lg font-bold text-gray-800'>{product_title}</h1>
             <h1 className='text-[16px] font-semibold text-gray-600'>Price: {price}</h1>
             <div className="card-actions w-full mt-4">

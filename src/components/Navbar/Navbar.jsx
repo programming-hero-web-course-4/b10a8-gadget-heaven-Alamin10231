@@ -100,7 +100,7 @@ const Navbar = () => {
                   isActive
                     ? "text-white underline underline-offset-1"
                     : gotohome
-                    ? "text-black"
+                    ? "text-white"
                     : "text-black"
                 }
               >

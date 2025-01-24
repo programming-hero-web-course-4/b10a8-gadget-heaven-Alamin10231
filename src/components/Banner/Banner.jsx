@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import bannerpic from "../../assets/banner.jpg"
 
 const Banner = () => {
   return (
@@ -27,13 +28,9 @@ const Banner = () => {
       </div>
       <div className="w-[60%] mx-auto -mt-36 rounded-2xl border-2 border-[#FFFFFF]">
         <div>
-          {
-            <img
-              className="w-full h-[400px]  p-2 rounded-2xl"
-              src="../../assets/banner.jpg"
-              alt=""
-            />
-          }
+        {
+                        <img className='rounded-3xl w-full h-[400px] object-fill p-3 ' src={bannerpic} alt="" />
+                    }
         </div>
       </div>
     </div>

@@ -1,26 +1,26 @@
 [
     {
-      "picture": "../../assets/beard-busy-bearded-business-background.jpg",
-      "name": "John Doe",
+      "picture": "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+      "name": "Johni  Danie",
       "profession": "Frontend Developer"
     },
     {
-      "picture": "../../assets/man-work.jpg",
+      "picture": "https://img.freepik.com/free-photo/programmer-working-late-his-computer_1098-18697.jpg",
       "name": "Jane Smith",
       "profession": "UI/UX Designer"
     },
     {
-      "picture":"../../assets/person-working-animation-porject.jpg",
+      "picture":"https://img.freepik.com/free-photo/young-programmer-working-laptop-office_1303-18602.jpg",
       "name": "Michael Brown",
       "profession": "Backend Developer"
     },
     {
-      "picture": "../../assets/male-graphic-designer-smiling-while-working.jpg",
+      "picture": "https://img.freepik.com/free-photo/closeup-man-hands-using-laptop-with-coding-screen_158595-5167.jpg",
       "name": "Emily Davis",
       "profession": "Full Stack Developer"
     },
     {
-      "picture": "../../assets/caucasian-young-man-sitting-front-laptop-looking-camera.jpg",
+      "picture": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
       "name": "William Johnson",
       "profession": "Web Designer"
     }
