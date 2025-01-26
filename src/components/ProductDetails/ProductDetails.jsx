@@ -42,11 +42,9 @@ const ProductDetails = () => {
       <div className="hero bg-transparent relative top-[-70px] px-4">
         <div className="hero-content flex flex-wrap lg:flex-nowrap items-center border-2 border-gray-100 rounded-lg bg-white shadow-lg p-6 lg:p-12">
           {/* Image Section */}
-          <img
-            src={product_image}
-            alt={product_title}
-            className="w-full md:w-1/2 lg:w-2/5 rounded-lg h-auto object-cover mb-6 lg:mb-0"
-          />
+          <div className='space-y-4 basis-[70%] md:w-2/5 h-full'>
+                    <img src={`/images/${product_image.split('/').pop()}`} alt={`${product_image} image`} />
+                </div>
 
           {/* Details Section */}
           <div className="w-full lg:w-3/5 lg:ml-12 space-y-4">

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getToWishList, removeToWishList } from "../About/AddToDb";
-
+import { TiDeleteOutline } from 'react-icons/ti';
 const WishList = () => {
   const [wishlist, setwishlist] = useState([]);
   const allwishlist = useLoaderData();
 
   useEffect(() => {
     const storedmywishlist = getToWishList();
-    const filteredmywishlist = allwishlist.filter((w) =>
-      storedmywishlist.includes(w.product_id !== product_id)
-    );
+    const filteredmywishlist = allwishlist.filter(w =>
+      (storedmywishlist.includes (w.product_id)
+    ));
     setwishlist(filteredmywishlist);
   }, [wishlist]);
 const handleRemovewishlist = (product_id)=>{
