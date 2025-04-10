@@ -1,4 +1,4 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 import bannerpic from "../../assets/banner.jpg"
 

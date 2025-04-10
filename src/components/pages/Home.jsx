@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+
 import UseTitle from '../UseTitle';
 import Banner from '../Banner/Banner';
 import Gadgets from './Gadgets/Gadgets';
